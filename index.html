@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Media Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>Падаль</h1>
+
+<div class="cities">
+
+<div class="city" onclick="loadCity('wiehl')">Wiehl</div>
+<div class="city" onclick="loadCity('koln')">Köln</div>
+<div class="city" onclick="loadCity('gummersbach')">гум</div>
+<div class="city" onclick="loadCity('bruhl')">Брюх</div>
+
+</div>
+
+<div id="gallery" class="gallery"></div>
+
+</div>
+
+<div id="viewer" class="viewer">
+
+<button class="closeViewer">✕</button>
+
+<img id="viewerImg">
+
+<div class="videoPlayer">
+
+<video id="viewerVideo"></video>
+
+<div class="videoControls">
+
+<button id="playBtn">▶</button>
+
+<div class="progressContainer">
+<div id="progressBar"></div>
+</div>
+
+<span id="time">0:00</span>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
